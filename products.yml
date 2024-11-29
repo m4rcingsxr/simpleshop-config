@@ -6,7 +6,7 @@ spring:
     name: "products"
 
   datasource:
-    url: jdbc:mysql://localhost:3306/simpleshop_product
+    url: "{cipher}1415e2b3aff56a60c35bd347b3358ba0e52c7297946dbd7d87a09d90304e625e8fdab3575362848c8f0499957dcbcbeda04ff662e6bdacd41aa867bb8b4ee91d"
     username: root
     password:
 
@@ -18,6 +18,12 @@ spring:
 
   liquibase:
     enabled: true
+
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
 logging:
   level:
@@ -35,7 +41,7 @@ products:
   message: "Welcome to SimpleShop products related docker APIs "
   contactDetails:
     name: "Marcin Seweryn - Developer"
-    email: "marcinsewerynn@gmail.com"
+    email: "marsew97@wp.pl"
   onCallSupport:
     - +48 123456789
-    - (555) 523-1345
+    - (48) 987654321
